@@ -7,9 +7,9 @@ import smtplib
 import ssl
 from bs4 import BeautifulSoup
 
-location = str(sys.argv[1])
+location = input("Cal + NW + NE + SE or something: ")
 # Locations are NW, SE, NE for Calgary!!
-url = "https://www.memoryexpress.com/Category/VideoCards?InventoryType=InStock&Inventory=Cal" + location
+url = "https://www.memoryexpress.com/Category/VideoCards?InventoryType=InStock&Inventory=" + location
 
 # emailing information
 port = 465
